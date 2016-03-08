@@ -1,18 +1,32 @@
-﻿using System;
+﻿using EPiServer.Core;
+using EPiServer.Find;
+using EPiServer.Find.Cms;
+using EPiServer.Security;
+using Jumeirah.DummyData.Cms;
+using Newtonsoft.Json.Serialization;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
 namespace Jumeirah.ContentService.Controllers
 {
-    //[RoutePrefix("content/{site}/{language}/city")]
     public class CityController : ApiController
     {
-        public string Get(string site, string language) 
+        public IEnumerable<CityBlock> Get(string site, string language) 
         {
-            return "Called Get / City";
+            var client = Client.CreateFromConfig();
+            CmsClientConventions.ApplyCmsConventions(client);
+            var result = client.Search<CityBlock>().GetResult();
+
+            //var image = client.Search<ImageData>().Filter(t => t.ContentLink.ID.Match(268)).GetResult();
+
+            return result;
         }
     }
 }
+
+
