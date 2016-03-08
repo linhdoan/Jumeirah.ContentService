@@ -43,7 +43,7 @@ namespace Jumeirah.ContentService
 
             routes.MapHttpRoute(
                 name: "HotelApiRoute",
-                routeTemplate: "content/{site}/{language}/cities/{cityName}/hotel/{id}",
+                routeTemplate: "content/{site}/{language}/cities/{cityName}/hotels/{id}",
                 defaults: new { controller = "Hotel", id = RouteParameter.Optional },
                 constraints: null,
                 handler: cityPipeline
