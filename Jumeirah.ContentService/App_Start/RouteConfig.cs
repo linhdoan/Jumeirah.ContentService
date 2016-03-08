@@ -35,7 +35,7 @@ namespace Jumeirah.ContentService
 
             routes.MapHttpRoute(
                 name: "CityApiRoute",
-                routeTemplate: "content/{site}/{language}/city/{id}",
+                routeTemplate: "content/{site}/{language}/cities/{id}",
                 defaults: new { controller = "City", id = RouteParameter.Optional },
                 constraints: null,
                 handler: siteLanguagePipeline
@@ -43,7 +43,7 @@ namespace Jumeirah.ContentService
 
             routes.MapHttpRoute(
                 name: "HotelApiRoute",
-                routeTemplate: "content/{site}/{language}/city/{cityName}/hotel/{id}",
+                routeTemplate: "content/{site}/{language}/cities/{cityName}/hotel/{id}",
                 defaults: new { controller = "Hotel", id = RouteParameter.Optional },
                 constraints: null,
                 handler: cityPipeline
@@ -51,7 +51,7 @@ namespace Jumeirah.ContentService
 
             routes.MapHttpRoute(
                 name: "SpaApiRoute",
-                routeTemplate: "content/{site}/{language}/city/{cityName}/hotel/{hotelName}/spa/{id}",
+                routeTemplate: "content/{site}/{language}/cities/{cityName}/hotels/{hotelName}/spas/{id}",
                 defaults: new { controller = "Spa", id = RouteParameter.Optional },
                 constraints: null,
                 handler: hotelPipeline
@@ -59,7 +59,7 @@ namespace Jumeirah.ContentService
 
             routes.MapHttpRoute(
                 name: "SpaApiRoute1",
-                routeTemplate: "content/{site}/{language}/city/{cityName}/spa/{id}",
+                routeTemplate: "content/{site}/{language}/cities/{cityName}/spas/{id}",
                 defaults: new { controller = "Spa", id = RouteParameter.Optional },
                 constraints: null,
                 handler: cityPipeline
