@@ -29,9 +29,12 @@ namespace Jumeirah.ContentService.DependencyResolution {
                 scan => {
                     scan.TheCallingAssembly();
                     scan.WithDefaultConventions();
+                    scan.AssembliesFromApplicationBaseDirectory();
+                    scan.IncludeNamespace("Jumeirah.FindClient");
                 });
             
-            For<ICityRepository>().Use<CityRepository>();
+            //For<ICityRepository>().Use<CityRepository>();
+            //For<IHotelRepository>().Use<HotelRepository>();
         }
 
         #endregion

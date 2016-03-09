@@ -1,4 +1,8 @@
-﻿using System;
+﻿using EPiServer.Find;
+using EPiServer.Find.Cms;
+using Jumeirah.DummyData.Cms.BlockDatas;
+using Jumeirah.FindClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,9 +13,21 @@ namespace Jumeirah.ContentService.Controllers
 {
     public class HotelController : ApiController
     {
-        public string Get(string site, string language, string cityName)
+        private IHotelRepository _hotelRepository;
+
+        public HotelController(IHotelRepository hotelRepository)
         {
-            return "Called Get / Hotel";
+            _hotelRepository = hotelRepository;
+        }
+
+        public IEnumerable<HotelBlock> Get(string site, string language) 
+        {
+            var client = Client.CreateFromConfig();
+            CmsClientConventions.ApplyCmsConventions(client);
+            _hotelRepository.Client = client;
+            var result = _hotelRepository.GetAllHotels();
+
+            return result;
         }
     }
 }

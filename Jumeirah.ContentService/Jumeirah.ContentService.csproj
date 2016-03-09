@@ -44,22 +44,22 @@
     </Reference>
     <Reference Include="EPiServer, Version=7.5.394.2, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\EPiServer\CMS\7.5.394.2\bin\EPiServer.dll</HintPath>
+      <HintPath>..\CmsDependencies\EPiServer.CMS.Core.9.5.0\lib\net45\EPiServer.dll</HintPath>
     </Reference>
-    <Reference Include="EPiServer.BaseLibrary, Version=7.5.394.2, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+    <Reference Include="EPiServer.ApplicationModules, Version=7.5.394.2, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\EPiServer\CMS\7.5.394.2\bin\EPiServer.BaseLibrary.dll</HintPath>
+      <HintPath>..\CmsDependencies\EPiServer.Framework.9.5.0\lib\net45\EPiServer.ApplicationModules.dll</HintPath>
     </Reference>
     <Reference Include="EPiServer.Data, Version=7.5.394.2, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\EPiServer.Data\v4.0_7.5.394.2__8fe83dea738b45b7\EPiServer.Data.dll</HintPath>
+      <HintPath>..\CmsDependencies\EPiServer.Framework.9.5.0\lib\net45\EPiServer.Data.dll</HintPath>
     </Reference>
     <Reference Include="EPiServer.Find">
       <HintPath>..\packages\EPiServer.Find.11.1.1.4013\lib\net45\EPiServer.Find.dll</HintPath>
     </Reference>
     <Reference Include="EPiServer.Framework, Version=7.5.394.2, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\EPiServer.Framework\v4.0_7.5.394.2__8fe83dea738b45b7\EPiServer.Framework.dll</HintPath>
+      <HintPath>..\CmsDependencies\EPiServer.Framework.9.5.0\lib\net45\EPiServer.Framework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Practices.ServiceLocation">

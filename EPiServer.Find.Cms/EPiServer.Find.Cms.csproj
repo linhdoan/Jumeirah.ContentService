@@ -32,18 +32,19 @@
   <ItemGroup>
     <Reference Include="EPiServer, Version=7.5.394.2, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\EPiServer\CMS\7.5.394.2\bin\EPiServer.dll</HintPath>
+      <HintPath>..\CmsDependencies\EPiServer.CMS.Core.9.5.0\lib\net45\EPiServer.dll</HintPath>
     </Reference>
     <Reference Include="EPiServer.Data, Version=7.5.394.2, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\EPiServer.Data\v4.0_7.5.394.2__8fe83dea738b45b7\EPiServer.Data.dll</HintPath>
+      <HintPath>..\CmsDependencies\EPiServer.Framework.9.5.0\lib\net45\EPiServer.Data.dll</HintPath>
     </Reference>
-    <Reference Include="EPiServer.Find">
-      <HintPath>..\Jumeirah.ContentService\bin\EPiServer.Find.dll</HintPath>
+    <Reference Include="EPiServer.Find, Version=11.1.1.4013, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EPiServer.Find.11.1.1.4013\lib\net45\EPiServer.Find.dll</HintPath>
     </Reference>
     <Reference Include="EPiServer.Framework, Version=7.5.394.2, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\EPiServer.Framework\v4.0_7.5.394.2__8fe83dea738b45b7\EPiServer.Framework.dll</HintPath>
+      <HintPath>..\CmsDependencies\EPiServer.Framework.9.5.0\lib\net45\EPiServer.Framework.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
