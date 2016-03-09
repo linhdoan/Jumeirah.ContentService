@@ -3,6 +3,7 @@ using EPiServer.Find;
 using EPiServer.Find.Cms;
 using EPiServer.Security;
 using Jumeirah.DummyData.Cms;
+using Jumeirah.FindClient;
 using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.Generic;
@@ -16,13 +17,19 @@ namespace Jumeirah.ContentService.Controllers
 {
     public class CityController : ApiController
     {
+        private ICityRepository _cityRepository;
+
+        public CityController(ICityRepository cityRepository)
+        {
+            _cityRepository = cityRepository;
+        }
+
         public IEnumerable<CityBlock> Get(string site, string language) 
         {
             var client = Client.CreateFromConfig();
             CmsClientConventions.ApplyCmsConventions(client);
-            var result = client.Search<CityBlock>().GetResult();
-
-            //var image = client.Search<ImageData>().Filter(t => t.ContentLink.ID.Match(268)).GetResult();
+            _cityRepository.Client = client;
+            var result = _cityRepository.GetAllCities();
 
             return result;
         }
