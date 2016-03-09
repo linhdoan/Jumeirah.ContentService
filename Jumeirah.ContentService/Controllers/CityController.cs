@@ -33,6 +33,16 @@ namespace Jumeirah.ContentService.Controllers
 
             return result;
         }
+
+        public CityBlock Get(string site, string language, string cityName)
+        {
+            var client = Client.CreateFromConfig();
+            CmsClientConventions.ApplyCmsConventions(client);
+            _cityRepository.Client = client;
+            var result = _cityRepository.GetCity(cityName);
+
+            return result;
+        }
     }
 }
 

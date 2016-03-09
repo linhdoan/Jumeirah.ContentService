@@ -20,5 +20,10 @@ namespace Jumeirah.FindClient
         {
             return Client.Search<CityBlock>().GetResult();
         }
+
+        public CityBlock GetCity(string name)
+        {
+            return Client.Search<CityBlock>().Filter(x => x.Name.Match(name)).GetResult().FirstOrDefault();
+        }
     }
 }

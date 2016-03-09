@@ -35,8 +35,8 @@ namespace Jumeirah.ContentService
 
             routes.MapHttpRoute(
                 name: "CityApiRoute",
-                routeTemplate: "content/{site}/{language}/cities/{id}",
-                defaults: new { controller = "City", id = RouteParameter.Optional },
+                routeTemplate: "content/{site}/{language}/cities/{cityName}",
+                defaults: new { controller = "City", cityName = RouteParameter.Optional },
                 constraints: null,
                 handler: siteLanguagePipeline
             );

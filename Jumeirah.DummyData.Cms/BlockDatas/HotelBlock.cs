@@ -67,7 +67,7 @@ namespace Jumeirah.DummyData.Cms.BlockDatas
         public virtual string LocalCurrency { get; set; }
 
         [Display(GroupName = Constants.ExtendTab, Order = 10)]
-        public virtual int PriceUSD { get; set; }
+        public virtual float PriceUSD { get; set; }
 
         [Display(GroupName = Constants.ExtendTab, Order = 11)]
         public virtual string PriceFrom { get; set; }

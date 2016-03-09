@@ -12,5 +12,6 @@ namespace Jumeirah.FindClient
     {
         IClient Client { get; set; }
         IEnumerable<CityBlock> GetAllCities();
+        CityBlock GetCity(string name);
     }
 }
