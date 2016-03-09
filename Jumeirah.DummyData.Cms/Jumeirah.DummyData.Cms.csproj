@@ -31,15 +31,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EPiServer, Version=7.5.394.2, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+    <Reference Include="EPiServer">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\CmsDependencies\EPiServer.CMS.Core.9.5.0\lib\net45\EPiServer.dll</HintPath>
     </Reference>
-    <Reference Include="EPiServer.Data, Version=7.5.394.2, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+    <Reference Include="EPiServer.Data">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\CmsDependencies\EPiServer.Framework.9.5.0\lib\net45\EPiServer.Data.dll</HintPath>
     </Reference>
-    <Reference Include="EPiServer.Framework, Version=7.5.394.2, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+    <Reference Include="EPiServer.Framework">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\CmsDependencies\EPiServer.Framework.9.5.0\lib\net45\EPiServer.Framework.dll</HintPath>
     </Reference>
