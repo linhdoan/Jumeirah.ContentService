@@ -12,7 +12,7 @@ using EPiServer.Web;
 namespace Jumeirah.DummyData.Cms
 {
     [ContentType(GUID = "{29949142-47CF-422E-8326-B49AB8FC5084}", DisplayName = "City Info", GroupName = "Dummy Data")]
-    public class CityBlock : BlockData
+    public class CityBlock : BlockData, IBlockDataHasImages
     {
         [CultureSpecific]
         [Required(AllowEmptyStrings = false)]

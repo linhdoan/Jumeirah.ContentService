@@ -56,8 +56,11 @@
   <ItemGroup>
     <Compile Include="BlockDatas\CityBlock.cs" />
     <Compile Include="BlockDatas\HotelBlock.cs" />
+    <Compile Include="BlockDatas\RoomBlock.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="CustomProperties\PropertyStrings.cs" />
+    <Compile Include="Helpers.cs" />
+    <Compile Include="Interfaces.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

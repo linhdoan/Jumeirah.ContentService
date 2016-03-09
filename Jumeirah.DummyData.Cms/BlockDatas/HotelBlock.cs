@@ -14,7 +14,7 @@ using Jumeirah.DummyData.Cms.CustomProperties;
 namespace Jumeirah.DummyData.Cms.BlockDatas
 {
     [ContentType(GUID = "{CE7817E3-C6BB-42AD-A3BF-9FEF050EC01A}", DisplayName="Hotel Info", GroupName="Dummy Data")]
-    public class HotelBlock : BlockData
+    public class HotelBlock : BlockData, IBlockDataHasImages
     {
         [CultureSpecific]
         [Required(AllowEmptyStrings = false)]
